@@ -1,0 +1,484 @@
+/* This is main CSS file */
+/* Global Variables */
+:root {
+  --primaryDarkColor: #1f1f1f;
+  --secondaryDarkColor: #545454;
+  --grayColor: #929292;
+  --primaryLightColor: #ffffff;
+  --buttonTextColor: #464646;
+  --buttonBackgroundColor: #f1f1f1;
+}
+body {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+}
+/* Typography */
+.headline-large-bold {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 55px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.headline-medium-bold {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.headline-small-bold {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.title-large-bold {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.title-medium-bold {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.title-small-bold {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.body-medium-bold {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.body-small-bold {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+/*  Utilities Classes */
+.header,
+.title {
+  color: var(--primaryDarkColor);
+}
+.desc {
+  color: var(--secondaryDarkColor);
+}
+.icon {
+  height: 35px;
+}
+/* Combonents */
+.v-line {
+  width: 2px;
+  height: 60%;
+  background-color: #9b9b9b;
+}
+.link {
+  text-decoration: none;
+}
+.button {
+  display: block;
+  width: max-content;
+  padding: 8px 24px;
+}
+.button,
+.link {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--primaryLightColor);
+  background-color: var(--primaryDarkColor);
+  border: 1px solid var(--primaryDarkColor);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.button:hover,
+.link:hover {
+  border: 1px solid var(--primaryDarkColor);
+  color: var(--primaryDarkColor);
+  background-color: var(--primaryLightColor);
+}
+/* Main Content Style */
+/* Header Style */
+.navbar-nav .nav-link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--secondaryDarkColor);
+}
+.navbar-nav .nav-link.active {
+  color: var(--primaryDarkColor);
+}
+/* Hero Section Style */
+.hero-section .counts .count .number {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.hero-section .counts .count .text {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.hero-section .counts .count .number,
+.hero-section .counts .count .text{
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--secondaryDarkColor);
+}
+.hero-section .rectangle {
+  width: 180px;
+  height: 160px;
+  top: 0;
+  left: -5px;
+  border: 2px solid var(--primaryDarkColor);
+}
+.hero-section .img-fluid {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.hero-section .arrow-down {
+  width: 40px;
+  height: 40px;
+  bottom: -20px;
+  right: 50%;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+}
+/* Our Services Section Style */
+.ourservices-section .header .h-line {
+  width: 50px;
+  height: 3px;
+  background-color: var(--primaryDarkColor);
+}
+/* Designing Section Style */
+.designing-section .accordion .accordion-button::after {
+  background-image: url("images/plus-solid.svg");
+}
+.designing-section .accordion .accordion-button:not(.collapsed):after {
+  background-image: url("images/minus-solid.svg");
+}
+/* Testamonials Section Style */
+.testamonials-section .buttons .btn {
+  color: var(--buttonTextColor);
+  background-color: var(--buttonBackgroundColor);
+}
+.testamonials-section .buttons .btn .fa-arrow-left,
+.testamonials-section .buttons .btn .fa-arrow-right {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.testamonials-section .opinions .card {
+  color: var(--primaryLightColor);
+  background-color: var(--primaryDarkColor);
+}
+.testamonials-section .card .customer .image {
+  height: 50px;
+}
+.testamonials-section .card .customer .address {
+  color: var(--grayColor);
+}
+/* Newsletter Section Style */
+.newsletter-section form {
+  width: 93%;
+  background-color: var(--primaryLightColor);
+}
+/* Footer Style */
+footer {
+  background-color: var(--primaryDarkColor);
+}
+footer .logo {
+  width: 100px;
+  color: var(--primaryLightColor);
+}
+footer .text {
+  color: #d1d1d1;
+}
+footer .social-icons .icon:hover {
+  background-color: var(--primaryLightColor);
+  color: var(--primaryDarkColor);
+}
+footer .social-icons .icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--primaryLightColor);
+  background-color: #313131;
+}
+footer .links-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--primaryLightColor);
+}
+footer .links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+}
+footer .links a {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-decoration: none;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #d1d1d1;
+}
+/* Media Query */
+/* Small Devices */
+@media only screen and (min-width: 576px) {
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .hero-section .desc {
+    width: 85%;
+  }
+  .hero-section .rectangle {
+    width: 100px;
+    height: 90px;
+    top: -15px;
+    left: 25px;
+  }
+  .hero-section .img-fluid {
+    left: -20px;
+  }
+  .hero-section .arrow-down {
+    right: 12px;
+    bottom: 0;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  .newsletter-section form {
+    width: 100%;
+  }
+}
+/* medium Devices */
+@media only screen and (min-width: 768px) {
+  .button {
+    padding: 10px 30px;
+  }
+  .hero-section .counts .count .number {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .hero-section .rectangle {
+    left: 15px;
+  }
+  .hero-section .img-fluid {
+    left: -30px;
+  }
+  .hero-section .arrow-down {
+    width: 60px;
+    height: 60px;
+  }
+  .testamonials-section .buttons .btn .fa-arrow-left,
+  .testamonials-section .buttons .btn .fa-arrow-right {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  .testamonials-section .opinions {
+    position: absolute;
+    top: 95px;
+    left: -235px;
+  }
+  .testamonials-section .opinions .card {
+    width: 50%;
+  }
+  .newsletter-section form {
+    width: 65%;
+  }
+  footer .logo {
+    width: 120px;
+  }
+  footer .social-icons .icon {
+    width: 28px;
+    height: 28px;
+  }
+  /* Large Devices */
+  @media only Screen and (min-width: 992px) {
+    .headline-large-bold {
+      font-size: 95px;
+      line-height: 100px;
+    }
+    .headline-medium-bold {
+      font-size: 30px;
+      line-height: 35px;
+    }
+    .headline-small-bold {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+    }
+    .title-large-bold {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .title-medium-bold {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .body-medium-bold {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    .body-small-bold {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+    .button {
+      padding: 10px 30px;
+      padding: 12px 36px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .navbar-nav .nav-link {
+      font-size: 18px;
+      line-height: 20px;
+    }
+    .hero-section .counts .count .number {
+      font-size: 36px;
+      line-height: 44px;
+    }
+    .hero-section .counts .count .text {
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .hero-section .rectangle {
+      width: 180px;
+      height: 160px;
+      left: 0px;
+    }
+    .hero-section .img-fluid {
+      left: -40px;
+    }
+    .hero-section .arrow-down {
+      width: 80px;
+      height: 80px;
+    }
+    .testamonials-section .opinions {
+      top: 140px;
+      left: -300px;
+    }
+    footer .logo {
+      width:150px;
+    }
+    footer .links-title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    footer .links a {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  /* Extra Large Devices */
+  @media only screen and (min-width: 1200px) {
+    .headline-large-bold {
+      font-size: 110px;
+      line-height: 115px;
+    }
+    .headline-medium-bold {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    .headline-small-bold {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+    }
+    .title-large-bold {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .title-medium-bold {
+      font-size: 18px;
+      line-height: 20px;
+    }
+    .body-medium-bold {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .body-small-bold {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .button {
+      padding: 16px 48px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .hero-section .counts .count .number {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    .icon {
+      height: 55px;
+    }
+    .testamonials-section .opinions {
+      top: 175px;
+      left: -350px;
+    }
+    footer .social-icons .icon {
+      width: 36px;
+      height: 36px;
+    }
+    footer .links-title {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    footer .links {
+      gap: 20px;
+      padding: 0;
+    }
+    footer .links a {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+}
